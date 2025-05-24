@@ -1,9 +1,10 @@
-.section2 {
+.div1, .div2 {
     height: 100vh;
 }
 
-.div1, .div2 {
+.div1-1, .div2-2 {
     background-color: #f5f5f7;
+    height: 100%;
 }
 
 .div3 {
