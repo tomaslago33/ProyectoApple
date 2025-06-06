@@ -8,7 +8,7 @@
 #section2>section,
 #section3>section {
     min-height: 97vh;
-    padding-top: 4.5rem;
+    padding-top: 3.5rem;
 }
 
 #section1>section {
@@ -35,4 +35,14 @@
 
 #imgSection3 {
     width: 100%;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper img {
+    width: 100%;
+    height: auto;
 }
