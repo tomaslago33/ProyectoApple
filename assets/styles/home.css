@@ -7,6 +7,14 @@
     height: 100%;
 }
 
+.text-degrade {
+    background: linear-gradient(94deg, #0090F7, #BA62FC, #F2416B, #F55600);
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+    margin: 0 auto;
+}
+
 .shadow-img {
     filter: drop-shadow(10px 5px 10px rgba(33, 33, 33, 0.4));
 }
