@@ -7,16 +7,6 @@
     height: 100%;
 }
 
-.div3 {
-    background: linear-gradient(#addcee, #f2f6f7);
-}
-
-.text-degrade {
-    background: linear-gradient(to right,#0090f7,#ba62fc,#f2416b, #f2416b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .shadow-img {
     filter: drop-shadow(10px 5px 10px rgba(33, 33, 33, 0.4));
 }
