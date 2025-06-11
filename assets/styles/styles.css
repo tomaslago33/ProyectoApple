@@ -152,10 +152,32 @@ body {
     height: 75px;
 }
 
-.show-more {
+#toggle-more {
+    display: none;
+}
+
+.extra-icons {
+    display: none;
+}
+
+#toggle-more:checked ~ .extra-icons {
+    display: flex;
+}
+
+#toggle-more:checked ~ .show-more-label::after {
+    content: "Show less ⌃";
+}
+
+.show-more-label {
     color: #0077cc;
     cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
     border-top: 1px solid #ccc;
     padding-top: 10px;
-    display: inline-block;
+    font-size: 14px;
+}
+
+.show-more-label::after {
+    content: "Show more ⌄";
 }
