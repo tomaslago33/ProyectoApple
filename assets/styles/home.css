@@ -18,3 +18,59 @@
 .shadow-img {
     filter: drop-shadow(10px 5px 10px rgba(33, 33, 33, 0.4));
 }
+
+#section1,
+#section2,
+#section3 {
+    min-height: 100vh;
+}
+
+#section1>section,
+#section2>section,
+#section3>section {
+    min-height: 97vh;
+    padding-top: 3.5rem;
+}
+
+#section1>section {
+    background: linear-gradient(to bottom right, #d4eaf7, #f9f9f9);
+}
+
+#section2>section,
+#section3>section {
+    background-color: #f5f5f7;
+}
+
+#section1 section h1,
+#section2 section h1,
+#section3 section h1 {
+    font-size: 3rem;
+}
+
+#section1 p,
+#section2 h5 span {
+    background: linear-gradient(94deg, #0090F7, #BA62FC, #F2416B, #F55600);
+    background-clip: text;
+    color: transparent;
+}
+
+#imgSection3 {
+    width: 100%;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
