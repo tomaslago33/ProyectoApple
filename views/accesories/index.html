@@ -40,70 +40,82 @@
 
         <section class="browse-bubbles">
             <div class="tabs">
-                <div class="tab active">Browse by Product</div>
-                <div class="tab">Browse by Category</div>
-            </div>
-            <div class="icons-container">
-                <div class="icon-item">
-                    <div class="icon-bubble">
-                        <img src="../../assets/images/accesories/icon-product-mac.png" alt="Apple">
-                    </div>
-                    Mac
-                </div>
-                <div class="icon-item">
-                    <div class="icon-bubble">
-                        <img src="../../assets/images/accesories/icon-product-ipad.png" alt="iPad">
-                    </div>
-                    iPad
-                </div>
-                <div class="icon-item">
-                    <div class="icon-bubble">
-                        <img src="../../assets/images/accesories/icon-product-iphone.png" alt="iPhone">
-                    </div>
-                    iPhone 
-                </div>
-                <div class="icon-item">
-                    <div class="icon-bubble">
-                        <img src="../../assets/images/accesories/icon-product-watch.png" alt="Watch">
-                    </div>
-                    Watch
-                </div>
-                <div class="icon-item">
-                    <div class="icon-bubble">
-                        <img src="../../assets/images/accesories/icon-product-vision-pro.png" alt="Accessories">
-                    </div>
-                    Apple Vision Pro
-                </div>
+                <button class="tab-button active" data-tab="product">Browse by Product</button>
+                <button class="tab-button" data-tab="category">Browse by Category</button>
             </div>
 
-            <input type="checkbox" id="toggle-more">
-
-            <!-- iconos extra -->
-            <div class="extra-icons-wrapper">
+            <div id="product" class="tab-content active">
                 <div class="icons-container">
                     <div class="icon-item">
                         <div class="icon-bubble">
-                            <img src="../../assets/images/accesories/icon-product-tv.png" alt="TV & Home">
+                            <img src="../../assets/images/accesories/product/icon-product-mac.png" alt="Apple">
                         </div>
-                        TV & Home
+                        Mac
                     </div>
                     <div class="icon-item">
                         <div class="icon-bubble">
-                            <img src="../../assets/images/accesories/icon-product-beats.png" alt="Beats by Dr. Dre">
+                            <img src="../../assets/images/accesories/product/icon-product-ipad.png" alt="iPad">
                         </div>
-                        Beats by Dr. Dre
-                    </div>  
+                        iPad
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-bubble">
+                            <img src="../../assets/images/accesories/product/icon-product-iphone.png" alt="iPhone">
+                        </div>
+                        iPhone 
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-bubble">
+                            <img src="../../assets/images/accesories/product/icon-product-watch.png" alt="Watch">
+                        </div>
+                        Watch
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-bubble">
+                            <img src="../../assets/images/accesories/product/icon-product-vision-pro.png" alt="Vision Pro">
+                        </div>
+                        Apple Vision Pro
+                    </div>
                 </div>
+            
+                <input type="checkbox" id="toggle-more">
+
+                <!-- iconos extra -->
+                <div class="extra-icons-wrapper">
+                    <div class="icons-container">
+                        <div class="icon-item">
+                            <div class="icon-bubble">
+                                <img src="../../assets/images/accesories/product/icon-product-tv.png" alt="TV & Home">
+                            </div>
+                            TV & Home
+                        </div>
+                        <div class="icon-item">
+                            <div class="icon-bubble">
+                                <img src="../../assets/images/accesories/product/icon-product-beats.png" alt="Beats by Dr. Dre">
+                            </div>
+                            Beats by Dr. Dre
+                        </div>  
+                    </div>
+                </div>
+
+                <!-- label como boton -->
+                <label for="toggle-more" class="show-more-label"></label>
             </div>
 
-            <!-- label como boton -->
-            <label for="toggle-more" class="show-more-label"></label>
+            <div id="category" class="tab-content">
+                <div class="icons-container">
+                    <div class="icon-item">
+                        <div class="icon-bubble">
+                            <img src="../../assets/images/accesories/icon-product-mac.png" alt="Apple">
+                        </div>
+                        Mac
+            </div>
         </section>
     </main>
     <footer>
 
     </footer>
-    <script src="./vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/script/accesories.js"></script>
+    <script src="../../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
