@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
-        }
+        },
+        autoplay: {
+            delay: 3000,
+        },
+        speed: 800,
     });
 });
