@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     background-color: #ffffff;
     color: #1d1d1f;
 }
@@ -28,7 +28,7 @@ body {
     margin-top: 10%;
 }
 
-.hero .imag{
+.hero .imag {
     width: 70%;
 }
 
@@ -60,12 +60,12 @@ body {
 }
 
 /* ---------------------search---------------------- */
-.search{
+.search {
     text-align: center;
     margin-top: 5%;
 }
 
-.search h2{
+.search h2 {
     font-size: 32px;
 }
 
@@ -85,7 +85,7 @@ body {
     height: 55px;
     width: 100%;
     max-width: 600px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
 }
 
 .search-box svg {
@@ -137,8 +137,13 @@ body {
 }
 
 @keyframes fade {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* ---------------------bubbles---------------------- */
@@ -187,7 +192,7 @@ body {
     transition: max-height 0.5s ease;
 }
 
-#toggle-more:checked ~ .extra-icons-wrapper {
+#toggle-more:checked~.extra-icons-wrapper {
     max-height: 500px;
 }
 
@@ -212,6 +217,45 @@ body {
     content: "Show more ⌄";
 }
 
-#toggle-more:checked ~ .show-more-label::after {
+#toggle-more:checked~.show-more-label::after {
+    content: "Show less ⌃";
+}
+
+#toggle-more-category {
+    display: none;
+}
+
+.extra-icons-wrapper-category {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+#toggle-more-category:checked~.extra-icons-wrapper-category {
+    max-height: 1000px;
+}
+
+.show-more-label-category {
+    color: #0077cc;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.show-more-label-category:hover {
+    color: #005fa3;
+}
+
+.show-more-label-category::after {
+    content: "Show more ⌄";
+}
+
+#toggle-more-category:checked~.show-more-label::after {
     content: "Show less ⌃";
 }
