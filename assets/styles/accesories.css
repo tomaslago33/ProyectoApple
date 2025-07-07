@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #ffffff;
+    color: #1d1d1f;
+}
+
+.hero {
+    background-color: #f5f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    text-align: left;
+    padding: 2rem;
+}
+
+.hero img {
+    margin-right: 0;
+    height: 75vh;
+    width: auto;
+}
+
+.hero-content {
+    width: 35%;
+    margin-left: 12%;
+    margin-top: 10%;
+}
+
+.hero .imag{
+    width: 70%;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 220px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+.hero-link {
+    font-size: 18px;
+    color: #0071e3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.hero-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* ---------------------search---------------------- */
+.search{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.search h2{
+    font-size: 32px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #888888;
+    border-radius: 8px;
+    padding: 10px 15px;
+    height: 55px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.search-box svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    fill: #999;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+}
+
+/* ---------------------tabs---------------------- */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+.tab-button {
+    padding: 10px;
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.tab-button.active {
+    color: #000;
+    border-color: #000;
+}
+
+.tab-content {
+    display: none;
+    animation: fade 0.3s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ---------------------bubbles---------------------- */
+.browse-bubbles {
+    margin: 5% 14% 5% 14%;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.icon-bubble {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon-bubble img {
+    width: 75px;
+    height: 75px;
+}
+
+#toggle-more {
+    display: none;
+}
+
+.extra-icons-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+#toggle-more:checked ~ .extra-icons-wrapper {
+    max-height: 500px;
+}
+
+.show-more-label {
+    color: #0077cc;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.show-more-label:hover {
+    color: #005fa3;
+}
+
+.show-more-label::after {
+    content: "Show more ⌄";
+}
+
+#toggle-more:checked ~ .show-more-label::after {
+    content: "Show less ⌃";
+}
