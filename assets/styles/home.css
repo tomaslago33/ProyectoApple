@@ -47,6 +47,10 @@
     font-size: 3rem;
 }
 
+#fondo-degrade {
+    background: linear-gradient(to bottom, #addcee, #f2f6f7);
+}
+
 #section1 p,
 #section2 h5 span {
     background: linear-gradient(94deg, #0090F7, #BA62FC, #F2416B, #F55600);
