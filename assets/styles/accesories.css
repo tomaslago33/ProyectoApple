@@ -259,3 +259,47 @@ body {
 #toggle-more-category:checked~.show-more-label::after {
     content: "Show less ⌃";
 }
+
+/* ---------------------playful-picks---------------------- */
+
+.playful-picks h2{
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 250px;
+    background: rgb(231, 231, 231);
+    border-radius: 10px;
+    scroll-snap-align: start;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.price {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.only-at {
+    color: orange;
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
