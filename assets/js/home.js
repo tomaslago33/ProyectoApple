@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.navItem').forEach(element => {
         element.addEventListener('mouseenter', () => {
-            document.querySelector('#subNav').style.height = '350px';
+            document.querySelector('#subNav').style.height = `${document.querySelector('#subNav').scrollHeight + 50}px`;
             document.querySelector('#subNav').style.paddingTop = '1rem';
-            document.querySelector('main').style.filter = 'blur(3px)';
-            document.querySelector('footer').style.filter = 'blur(3px)';
+            document.querySelector('main').style.filter = 'blur(2px)';
+            document.querySelector('footer').style.filter = 'blur(2px)';
         });
     });
 
