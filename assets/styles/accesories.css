@@ -266,40 +266,43 @@ body {
     text-align: center;
 }
 
-.carousel-container {
-    display: flex;
+.scrolling-wrapper {
     overflow-x: auto;
-    gap: 1rem;
-    padding: 1rem;
-    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    scroll-behavior: smooth;
 }
 
-.card {
-    flex: 0 0 auto;
-    width: 250px;
-    background: rgb(231, 231, 231);
-    border-radius: 10px;
-    scroll-snap-align: start;
-    padding: 1rem;
-    text-align: center;
-}
-
-.card img {
+.card-wrapper {
+    display: inline-block;
     width: 100%;
-    height: auto;
+    max-width: 220px;
+    margin-right: 1rem;
+    vertical-align: top;
+    background-color: #e8e8e8;
 }
 
-.price {
-    margin-top: 10px;
-    font-weight: bold;
+.card-img-top {
+    max-height: 300px; /* más chica aún */
+    width: auto;
+    margin: 0 auto;
+    padding-top: 10px;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .card-wrapper {
+    max-width: 32%;
+    }
 }
 
 .only-at {
     color: orange;
-    font-size: 0.9em;
-    margin-bottom: 0.5em;
+    font-size: 0.9rem;
 }
 
-.carousel-container::-webkit-scrollbar {
-    display: none;
+.arrow-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
 }
