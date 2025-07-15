@@ -23,7 +23,7 @@ const track = document.querySelector('.ticker-track');
 track.innerHTML += track.innerHTML;
 
 let position = 0;
-let speed = 0.8; // píxeles por frame (~30px/s a 60fps)
+let speed = 1.2; // píxeles por frame (~30px/s a 60fps)
 
 function animate() {
     position -= speed;
@@ -47,6 +47,6 @@ wrapper.addEventListener('mouseenter', () => {
 });
 
 wrapper.addEventListener('mouseleave', () => {
-    speed = 0.8; // velocidad normal
+    speed = 1.2; // velocidad normal
 });
 
