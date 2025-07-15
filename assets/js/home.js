@@ -49,4 +49,3 @@ wrapper.addEventListener('mouseenter', () => {
 wrapper.addEventListener('mouseleave', () => {
     speed = 1.2; // velocidad normal
 });
-
