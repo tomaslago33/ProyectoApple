@@ -13,12 +13,13 @@ tabButtons.forEach(button => {
         document.getElementById(tabId).classList.add("active");
     });
 });
+
 const carousel = document.getElementById('cardCarousel');
 
 function scrollLeft() {
-    arousel.scrollBy({ left: -320, behavior: 'smooth' });
+  carousel.scrollBy({ left: -carousel.offsetWidth, behavior: 'smooth' });
 }
 
 function scrollRight() {
-    carousel.scrollBy({ left: 320, behavior: 'smooth' });
+  carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
 }

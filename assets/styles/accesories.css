@@ -11,21 +11,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 75vh;
+    height: 50vh;
     text-align: left;
     padding: 2rem;
 }
 
 .hero img {
     margin-right: 0;
-    height: 75vh;
+    height: 50vh;
     width: auto;
 }
 
 .hero-content {
     width: 35%;
     margin-left: 12%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .hero .imag {
@@ -262,47 +262,40 @@ body {
 
 /* ---------------------playful-picks---------------------- */
 
-.playful-picks h2{
-    text-align: center;
+.playful-picks h2 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .scrolling-wrapper {
-    overflow-x: auto;
-    white-space: nowrap;
-    scroll-behavior: smooth;
+  display: flex;
+  gap: 1rem; /* separa las cards */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
 }
 
 .card-wrapper {
-    display: inline-block;
-    width: 100%;
-    max-width: 220px;
-    margin-right: 1rem;
-    vertical-align: top;
-    background-color: #e8e8e8;
+  flex: 0 0 calc(33.333% - 1rem); /* 3 tarjetas visibles */
+  max-width: calc(33.333% - 1rem);
+}
+
+@media (max-width: 768px) {
+  .card-wrapper {
+    flex: 0 0 80%; /* en móvil, 1 tarjeta a la vez */
+    max-width: 80%;
+  }
 }
 
 .card-img-top {
-    max-height: 300px; /* más chica aún */
-    width: auto;
-    margin: 0 auto;
-    padding-top: 10px;
-    object-fit: contain;
-}
-
-@media (min-width: 768px) {
-    .card-wrapper {
-    max-width: 32%;
-    }
+  max-height: 350px; /* imagen más pequeña */
+  width: auto;
+  margin: 0 auto;
+  padding-top: 30px;
+  object-fit: contain;
 }
 
 .only-at {
-    color: orange;
-    font-size: 0.9rem;
-}
-
-.arrow-btn {
-    border: none;
-    background-color: transparent;
-    font-size: 2rem;
-    cursor: pointer;
+  color: rgb(197, 128, 0);
+  font-size: 0.9rem;
 }
