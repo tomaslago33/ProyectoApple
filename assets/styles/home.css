@@ -64,12 +64,12 @@
     width: 100%;
 }
 
-.swiper {
+#sectionCarousel .swiper {
     width: 100%;
     height: auto;
 }
 
-.swiper-slide {
+#sectionCarousel .swiper-slide {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -79,7 +79,7 @@
     position: relative;
 }
 
-.swiper-slide img {
+#sectionCarousel .swiper-slide img {
     width: 100%;
     height: auto;
 }
@@ -142,4 +142,119 @@ footer {
 
 footer {
     background-color: #f5f5f7;
+}
+
+#sectionCarousel .swiper-slide-active {
+    opacity: 1;
+}
+
+#sectionCarousel .swiper-pagination-bullet {
+    background: rgb(114, 114, 114);
+    /* color de puntitos inactivos */
+    opacity: 0.7;
+    margin: 0 7px !important;
+}
+
+/* Puntito activo */
+#sectionCarousel .swiper-pagination-bullet-active {
+    background: rgb(45, 43, 43);
+    /* color del puntito activo */
+    opacity: 1;
+}
+
+.btn-slide {
+    position: absolute;
+    bottom: 46px;
+    /* separación inferior */
+    left: 50px;
+    /* separación izquierda */
+    padding: 8px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.btn-slide button {
+    padding: 8px 20px;
+    background-color: f5f5f7;
+    /* negro semi-transparente */
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Carrusel 2 */
+.ticker-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.ticker-track {
+    display: flex;
+    width: max-content;
+}
+
+.slide {
+    flex-shrink: 0;
+    margin-right: 10px;
+    width: auto;
+    position: relative;
+}
+
+.slide img {
+    height: auto;
+    width: 410px;
+    object-fit: cover;
+}
+
+.slide img:hover {
+    filter: brightness(0.7);
+    cursor: pointer;
+}
+
+.hover-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgb(236, 230, 230);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.slide:hover .hover-btn {
+    opacity: 1;
+    /* pointer-events: auto; */
+}
+
+/* HACER RESPONSIVE LAS IMG */
+
+.p-img {
+    position: absolute;
+    top: 84%;
+    left: 6%;
+    color: #ffffff;
+}
+
+.p-img2 {
+    position: absolute;
+    top: 84%;
+    right: 4%;
+    color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+    .slide img {
+        width: 280px;
+    }
 }
