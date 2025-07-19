@@ -13,3 +13,13 @@ tabButtons.forEach(button => {
         document.getElementById(tabId).classList.add("active");
     });
 });
+
+const carousel = document.getElementById('cardCarousel');
+
+function scrollLeft() {
+  carousel.scrollBy({ left: -carousel.offsetWidth, behavior: 'smooth' });
+}
+
+function scrollRight() {
+  carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
+}
