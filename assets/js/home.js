@@ -43,7 +43,7 @@ animate();
 const wrapper = document.querySelector('.ticker-wrapper');
 
 wrapper.addEventListener('mouseenter', () => {
-    speed = 0.3; // más lento
+    speed = 0.5; // más lento
 });
 
 wrapper.addEventListener('mouseleave', () => {

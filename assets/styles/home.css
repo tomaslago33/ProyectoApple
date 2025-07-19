@@ -1,85 +1,87 @@
-.div1, .div2 {
-    height: 100vh;
+.div1,
+.div2 {
+  height: 100vh;
 }
 
-.div1-1, .div2-2 {
-    background-color: #f5f5f7;
-    height: 100%;
+.div1-1,
+.div2-2 {
+  background-color: #f5f5f7;
+  height: 100%;
 }
 
 .text-degrade {
-    background: linear-gradient(94deg, #0090F7, #BA62FC, #F2416B, #F55600);
-    background-clip: text;
-    color: transparent;
-    width: fit-content;
-    margin: 0 auto;
+  background: linear-gradient(94deg, #0090F7, #BA62FC, #F2416B, #F55600);
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .shadow-img {
-    filter: drop-shadow(10px 5px 10px rgba(33, 33, 33, 0.4));
+  filter: drop-shadow(10px 5px 10px rgba(33, 33, 33, 0.4));
 }
 
 #section1,
 #section2,
 #section3 {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 #section1>section,
 #section2>section,
 #section3>section {
-    min-height: 97vh;
-    padding-top: 3.5rem;
+  min-height: 97vh;
+  padding-top: 3.5rem;
 }
 
 #section1>section {
-    background: linear-gradient(to bottom right, #d4eaf7, #f9f9f9);
+  background: linear-gradient(to bottom right, #d4eaf7, #f9f9f9);
 }
 
 #section2>section,
 #section3>section {
-    background-color: #f5f5f7;
+  background-color: #f5f5f7;
 }
 
 #section1 section h1,
 #section2 section h1,
 #section3 section h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 #fondo-degrade {
-    background: linear-gradient(to bottom, #addcee, #f2f6f7);
+  background: linear-gradient(to bottom, #addcee, #f2f6f7);
 }
 
 #section1 p,
 #section2 h5 span {
-    background: linear-gradient(94deg, #0090F7, #BA62FC, #F2416B, #F55600);
-    background-clip: text;
-    color: transparent;
+  background: linear-gradient(94deg, #0090F7, #BA62FC, #F2416B, #F55600);
+  background-clip: text;
+  color: transparent;
 }
 
 #imgSection3 {
-    width: 100%;
+  width: 100%;
 }
 
 #sectionCarousel .swiper {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 #sectionCarousel .swiper-slide {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.4;
-    transition: opacity 0.5s;
-    position: relative;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.4;
+  transition: opacity 0.5s;
+  position: relative;
 }
 
 #sectionCarousel .swiper-slide img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* Slide activa totalmente visible */
@@ -88,29 +90,34 @@
 }
 
 #sectionCarousel .swiper-pagination-bullet {
-  background: rgb(114, 114, 114); /* color de puntitos inactivos */
+  background: rgb(114, 114, 114);
+  /* color de puntitos inactivos */
   opacity: 0.7;
   margin: 0 7px !important;
 }
 
 /* Puntito activo */
 #sectionCarousel .swiper-pagination-bullet-active {
-  background: rgb(45, 43, 43); /* color del puntito activo */
+  background: rgb(45, 43, 43);
+  /* color del puntito activo */
   opacity: 1;
 }
 
 .btn-slide {
-    position: absolute;
-    bottom: 46px; /* separación inferior */
-    left: 50px;   /* separación izquierda */
-    padding: 8px 20px;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
+  position: absolute;
+  bottom: 46px;
+  /* separación inferior */
+  left: 50px;
+  /* separación izquierda */
+  padding: 8px 20px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
 }
 
 .btn-slide button {
   padding: 8px 20px;
-  background-color: f5f5f7; /* negro semi-transparente */
+  background-color: f5f5f7;
+  /* negro semi-transparente */
   color: black;
   border: none;
   border-radius: 20px;
@@ -138,13 +145,13 @@
 
 .slide img {
   height: auto;
-  width: 420px;
+  width: 410px;
   object-fit: cover;
 }
 
 .slide img:hover {
-    filter: brightness(0.7);
-    cursor: pointer;
+  filter: brightness(0.7);
+  cursor: pointer;
 }
 
 .hover-btn {
@@ -152,7 +159,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+
   background-color: rgb(236, 230, 230);
   color: black;
   border: none;
@@ -160,7 +167,7 @@
   font-size: 14px;
   border-radius: 20px;
   cursor: pointer;
-  
+
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -172,3 +179,23 @@
 }
 
 /* HACER RESPONSIVE LAS IMG */
+
+.p-img {
+  position: absolute;
+  top: 84%;
+  left: 6%;
+  color: #ffffff;
+}
+
+.p-img2 {
+  position: absolute;
+  top: 84%;
+  right: 4%;
+  color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+    .slide img {
+      width: 280px;
+    }
+}
