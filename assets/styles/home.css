@@ -84,7 +84,6 @@
     height: auto;
 }
 
-<<<<<<< HEAD
 /* Slide activa totalmente visible */
 .swiper-slide-active {
     opacity: 1;
@@ -139,8 +138,8 @@ header>#subNav {
 main,
 footer {
     transition: filter .5s linear;
-=======
+}
+
 footer {
     background-color: #f5f5f7;
->>>>>>> feat/footer
 }
