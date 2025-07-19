@@ -14,12 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
         speed: 800
     });
 
+    let flag = true;
     document.querySelectorAll('.navItem').forEach(element => {
         element.addEventListener('mouseenter', () => {
-            document.querySelector('#subNav').style.height = `${document.querySelector('#subNav').scrollHeight + 50}px`;
-            document.querySelector('#subNav').style.paddingTop = '1rem';
-            document.querySelector('main').style.filter = 'blur(2px)';
-            document.querySelector('footer').style.filter = 'blur(2px)';
+            if (flag) {
+                document.querySelector('#subNav').style.height = `${document.querySelector('#subNav').scrollHeight + 50}px`;
+                document.querySelector('#subNav').style.paddingTop = '1rem';
+                document.querySelector('main').style.filter = 'blur(2px)';
+                document.querySelector('footer').style.filter = 'blur(2px)';
+                flag = false;
+            };
         });
     });
 
@@ -29,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('#subNav').style.paddingTop = '0';
             document.querySelector('main').style.filter = 'none';
             document.querySelector('footer').style.filter = 'none';
+            flag = true;
         };
     });
 });
